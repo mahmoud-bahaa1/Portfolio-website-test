@@ -1,0 +1,434 @@
+/*global style*/
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", serif;
+}
+p,span{
+    font-family: Poppins, sans-serif;
+}
+:root{
+    --main-color:#343434;
+    --h2-weight:900;
+    --h2-size:40px;
+    --h2-line:44px;
+    
+}
+/*end global*/
+
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/bg.jpg);
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+.icons-header li{
+  color: white;
+  
+}
+@keyframes header-animation {
+    0% {content: "|";}
+    4% {content: "D|";}
+    8%{content:"De|"}
+    12%{content:"Dev|"}
+    16%{content:"Devo|"}
+    20%{content:"Develo|"}
+    24%{content:"Devolop|"}
+    28%{content:"Develope|"}
+    32%{content:"Developer|"}
+    34%{content:"|"}
+    36%{content:"D|"}
+    40%{content:"De|"}
+    44%{content:"Des|"}
+    48%{content:"Desi|"}
+    52%{content:"Desig|"}
+    56%{content:"Design|"}
+    60%{content:"Designe|"}
+    64%{content: "Designer|";}
+    66%{content: "|";}
+    68%{content: "L|";}
+    72%{content: "La|";} 
+    76%{content: "Lar|";} 
+    80%{content: "Larr|";} 
+    84%{content: "Larry|";}
+    88%{content: "Larry D|";}
+    91%{content: "Larry Da|";}
+    94%{content: "Larry Dan|";}
+    97%{content: "Larry Dani|";}
+    98%{content: "Larry Danie|";}
+    99%{content: "Larry Daniel|";}
+    100%{content: "Larry Daniels|";}
+
+
+
+} 
+ .header-title h1::after{
+content: ' |';
+animation-name: header-animation;
+animation-duration: 7s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+   font-weight: 400;
+   font-size: 60px;
+   line-height: 72px;
+
+ }
+#about .inner{
+    background-position: center center;
+    background-image: url(../images/dots.png)
+}
+.icons-header a{
+    color: white;
+}
+/*end header*/
+
+/*start about*/
+.nav-logo{
+    font-family:  Montserrat, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav-item{
+    padding-left: 20px;
+}
+.span-about{
+    color: #999;
+    line-height: 20px;
+    font-size:14px;
+    font-weight: 400;
+}
+.p-about{
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #748182;
+}
+
+.progress-bar{
+   background-color:black;
+   font-size: 0.85rem;
+}
+
+.btn-1{
+    transition: all 0.5s;
+    background-color: black;
+    color: white;
+  
+}
+
+.btn-1:hover{
+     background-color: white;
+     color: black;
+     border: 1px solid black;
+}
+.btn-2:hover{
+    background-color: black;
+    color: white;
+}
+.btn-2{
+  transition: all 0.5s;
+ border: 1px solid black;
+}
+/*end about*/
+
+/*start Services*/
+#services{
+    background-color: #F7F7F7;
+}
+.Services h2{
+    background-position: center center;
+   
+    background-image: url(../images/dots.png)
+}
+.Portfolio h2{
+     background-position: center center;
+    background-image: url(../images/dots.png)
+}
+.Services h3{
+
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+}
+.Services p{
+    font-size: 14px;
+}
+.team-1::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0 ;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    
+}
+.team-1:hover::after{
+    opacity: 1;
+   transform: rotateY(180deg) scale(0.9, 0.9);
+   overflow: hidden;
+}
+.layer::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 1s;
+    
+}
+
+
+.testmonials-h2{
+    font-size: 40px;
+    font-family: "Montserrat", serif;
+    font-weight: 900;
+    line-height:44px ;
+    background-position: center center;
+   position: relative;
+   top: 25px;
+    background-image: url(../images/dots.png)
+}
+.testmonials p{
+    font-family: "Poppins", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #748182;
+}
+.testmonials span{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #888;
+}
+.testmonials h4{
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 16px;
+}
+.layer:hover::after{
+    opacity: 1;
+}
+.layer .portfolio-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 10;
+    opacity: 0;
+}
+.team-1 .team-layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 10;
+    opacity: 0;
+    
+}
+.team-1 .team-layer:hover{
+    opacity: 1;
+}
+.layer .portfolio-layer:hover{
+    opacity: 1;
+}
+.layer{
+    overflow: hidden;
+}
+.layer:hover .portfolio-layer{
+    top: 0;
+}
+.Portfolio h2{
+    font-family: "Montserrat", serif; 
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+
+}
+.Services h2{
+    font-family: "Montserrat", serif; 
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+}
+.Portfolio h6{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+}
+.nav-tabs{
+    border: none;
+}
+.nav{
+    justify-content: center;
+}
+.nav-tabs .nav-link{
+    border: none;
+    color: black;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+}
+ .testmonials img{
+    width: 80px;
+ }
+ .carousel-indicators{
+    bottom: -20px;
+   
+   
+ }
+ .form-control   {
+    padding-block: 1px;
+    padding-inline: 2px;
+    background-color: #F4F4F4;
+    border-radius: 0;
+}
+   
+ 
+ .carousel-indicators [data-bs-target]{
+    background-color:#869791;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    
+    
+ }
+ .our-team h2{
+    background-position: center center;
+    background-image: url(../images/dots.png)  
+ }
+ .team-1:hover{
+    overflow: hidden;
+ }
+ .team-1-title{
+    background-color: #5B5B5B;
+ }
+ .testmonials{
+    background-color: #F7F7F7;
+ }
+ #carouselExampleIndicators{
+    background-color: #F7F7F7;
+ }
+.facts span{
+    font-size:30px;
+    font-weight: 900;
+line-height: 32px;
+font-family: "Montserrat", serif;
+}
+.facts p{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.text-footer{
+    color: #748182;
+}
+.footer{
+    background-color: #1C1C1C;
+}
+.footer span{
+    
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+
+.our-team{
+    background-color: #F7F7F7;
+}
+.our-team h2{
+    font-weight: 900;
+    font-size: 40px;
+   
+}
+.team-title{
+    background-color: #5B5B5B;
+}
+.contact .inner h4{
+font-size: 16px;
+font-family: "Montserrat", sans-serif;
+font-weight: 700;
+line-height: 18px;
+}
+.contact .inner p{
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+color: #748182;
+}
+.custom-focus:focus {
+    background-color:#F4F4F4;
+    border-radius: 0px;
+    border-color: transparent; 
+    box-shadow: 0 0 0px ; 
+    outline: none; /
+}
+
+
+@media screen and (min-width:768px) {
+    header h2{
+        font-size:50px;
+        font-weight:800;
+        line-height: 55px;
+    }
+  
+  
+    .header-animaton span{
+        font-size:60px;
+        font-weight:200;
+        line-height: 72px;
+    }
+    .nav-logo{
+        font-family:  Montserrat, sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+    .progress{
+        height: 1.5rem;
+        width: 620px;
+        }
+      
+}
+@media screen and (min-width:0px) and (max-width:765px) {
+    .inner img{
+        width: 100%;
+    }
+    .progress{
+        height: 1.2rem;
+     
+        }
+        .header-title h1::after{
+            font-size: 40px;
+        }
+  
+        .facts-item1{
+            padding-top: 30px;
+        }
+         h2{
+            font-size: 45px;
+          }
+          .m-ph{
+            margin-top: 15px;
+          }
+}
